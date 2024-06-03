@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #46973B; /* Set background color */
+    }
+    .container {
+      max-width: 400px;
+      margin-top: 100px;
+      border: 1px solid #ced4da; /* Add border */
+      border-radius: 10px; /* Add border-radius for rounded corners */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+      padding: 20px; /* Add padding for spacing */
+      background-color: #fff;
+    }
+    .register_btn {
+      text-decoration: none;
+    }
+    .btn-register {
+      background-color: #46973B; /* Set background color to black */
+      border-color: #46973B;
+      color: #fff; 
+    }
+
+    .btn-register:hover {
+      background-color: #555; /* Darken background color on hover */
+      border-color: #555; /* Darken border color on hover */
+    }
+    #lock_icon{
+      position: relative;
+      left: 100px;
+      font-size: 25px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-center mb-4">Register <i class="fa-solid fa-lock" id="lock_icon"></i></h2>
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter username">
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+      </div>
+      <button type="submit" class="btn btn-register btn-block">Register</button>
+    </form>
+    <div class="text-center mt-3">
+      <p>Already have an account? <a href="./login.html" class="register_btn">Login here</a></p>
+    </div>
+  </div>
+  
+  <script src="register.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
